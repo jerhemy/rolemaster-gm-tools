@@ -1,0 +1,102 @@
+<!doctype html>
+<html ng-app="RolemasterApp">
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/flat-ui.css">
+        <title>Rolemaster Encounters</title>
+        <style>
+            canvas {
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            
+            ul.dropdown li > a {
+              cursor: pointer;
+            }
+        </style>
+    </head>
+    <body ng-controller="MainCtrl" ng-cloak="">
+        
+		<ul class="cbp-vimenu">
+		    
+			<li><a href="#" ng-click="goTo('Encounter')" class="icon-encounter">Encounter</a></li>
+			<!--
+			<li><a href="#" ng-click="goTo('Combat')" class="icon-combat">Combat</a></li>
+			<li><a href="#" ng-click="goTo('Dice')" class="icon-dice">Dice</a></li>
+			<li><a href="#" ng-click="goTo('Treasure')"  class="icon-treasure">Treasure</a></li>
+			<li><a href="#" ng-click="goTo('Herb')" class="icon-herbs">Herbs</a></li>
+
+			<li class="cbp-vicurrent"><a href="#" class="icon-pencil">Pencil</a></li>
+			
+			<li><a href="#" ng-click="goTo('Map')" class="icon-map">Map</a></li>
+			<li><a href="#" class="icon-spells">Spells</a></li>
+			-->
+		</ul>
+		
+        <div style="margin-left:90px;" ui-view></div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+        <script src="js/angular-ui-router.js"></script>
+        <!-- Angular Material Library -->
+        <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/flat-ui.min.js"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/encounters/encounter.ctrl.js"></script>
+        <script type="text/javascript" src="app/treasures/treasure.ctrl.js"></script>
+        <script type="text/javascript" src="app/dice/dice.ctrl.js"></script>
+        <script type="text/javascript" src="app/maps/maps.ctrl.js"></script>
+        <script type="text/javascript" src="app/herbs/herbs.ctrl.js"></script>
+        <script type="text/javascript" src="app/combat/combat.ctrl.js"></script>
+        <!-- 3rd Party -->
+        <script src="js/three.min.js"></script>
+        <script src="js/cannon.min.js"></script>
+        <script type="text/javascript" src="js/teal.js"></script>
+        <script type="text/javascript" src="js/dice.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+        <script type="text/ng-template" id="dialog1.tmpl.html"><md-dialog aria-label="Select Table" ng-cloak>
+          <form>
+            <md-dialog-content>
+              <div class="md-dialog-content">{{text}}</div>
+            </md-dialog-content>
+        
+            <md-dialog-actions layout="row">
+              <md-button ng-click="hide()" style="margin-right:20px;">OK</md-button>
+            </md-dialog-actions>
+          </form>
+        </md-dialog>
+        </script>
+
+        <script type="text/ng-template" id="Special.tmpl.html"><md-dialog aria-label="Special-Reroll"  ng-cloak>
+          <form>
+            <md-toolbar>
+              <div class="md-toolbar-tools">
+                <h2>Special or Reroll</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                  <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+              </div>
+            </md-toolbar>
+        
+            <md-dialog-content>
+              <div class="md-dialog-content">Please Reroll on a <b>{{data}}</b> table.</div>
+            </md-dialog-content>
+        
+            <md-dialog-actions layout="row">
+              <md-button ng-click="hide()" style="margin-right:20px;">OK</md-button>
+            </md-dialog-actions>
+          </form>
+        </md-dialog>
+        </script>
+    </body>
+</html>
