@@ -2,7 +2,6 @@ var express = require('express');
 var fs = require('fs');
 var app = express();
 var bodyParser = require('body-parser')
-var MongoClient = require('mongodb').MongoClient;
 var http = require("http");
 var Roll = require('roll'),
     roll = new Roll();
@@ -122,7 +121,6 @@ app.get('/api/creature/:name', function(req, res) {
 
 
 app.get('/api', Encounters);
-
 
 var server = app.listen(process.env.PORT, function () {
   var host = process.env.IP
