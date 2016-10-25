@@ -7,9 +7,12 @@ var Roll = require('roll'),
     roll = new Roll();
 var Encounters = require('./controllers/encounter');
 
+var port = process.env.PORT || 8080;
+
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
 
 app.get('/api/tables', function(req, res) {
   
@@ -122,7 +125,7 @@ app.get('/api/creature/:name', function(req, res) {
 
 app.get('/api', Encounters);
 
-var server = app.listen(process.env.PORT, function () {
+var server = app.listen(port, function () {
   var host = process.env.IP
   var port = process.env.PORT;
 
