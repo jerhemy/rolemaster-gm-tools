@@ -1,4 +1,8 @@
-before_install:
-  - brew update
-  - brew install
+language: node_js
+node_js:
+  - "6"
+
+install:
+  - npm install -g bower
   - npm install
+  - bower install
