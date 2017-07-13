@@ -6,7 +6,7 @@
   "repository": "",
   "engines": {
     "node": "8.1.4"
-  }
+  },
   "author": "Jerhemy Waldon <jswaldon@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
