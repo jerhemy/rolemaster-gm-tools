@@ -7533,52 +7533,6 @@
         "description":"Rumor asserts that Orcs possess as ancestors Elves, whose minds and bodies were twisted by evil. If any truth remains mingled with this oft-repeated whisper, the fair has indeed become obscenely foul. Grotesque faces with slanting eyes and flattened snouts full of sharpened tusks further deform the heavily built, muscled body with its long arms and thick, swarthy hide.  Cannibalistic cruelty motivates their distorted souls, and Orcs respect little save superior force. Most are superb smiths, but they rarely make items unassociated with war. Lesser Orcs are born to live, fight, and die in darkness; they hate the stars and moon, but panic under the brighter sun. Greater Orcs are smarter and tougher; they can operate in daylight and possess superior skills in speaking, reasoning, and fighting; some superior individuals have been known to be spell-casters. Loremasters frequently confuse Orcs with Goblins due to their similar gruesome physiognomies and proclivities, but if legends are to be heeded, their origins are very different. Fabulous tale depict Orc and Elf locked in fratricidal hatred, determined to vanquish their sinister brethren or perish in the attempt. The fury displayed their counterparts who roam outside the realm of story lends credence to the existence of a blood tie."
     },
     {
-        "fullname":"Orcs",
-        "name":"Orcs",
-        "subtype":"Lesser",
-        "intelligence":"MD",
-        "outlook":"Cruel",
-        "notes":"(-)-X@#,ARU-4; 4-5 ft. tall; partially blinded by direct sunlight (-50 to all activities); suggested professional limitations: no spell users; average lifespan: 500 yrs.",
-        "level":"2B",
-        "hits":"50D",
-        "at_db":"8(30s)",
-        "size_crit":"M/--",
-        "base_rate":"50",
-        "max_pace":"FSpt",
-        "mn_bonus":"+0",
-        "ms_aq":"SL/MD",
-        "attacks":[
-    		"+40 Melee",
-    		"+40 Missile"
-        ],
-        "encountered":"varies",
-        "treasure":"varies",
-        "description":"Rumor asserts that Orcs possess as ancestors Elves, whose minds and bodies were twisted by evil. If any truth remains mingled with this oft-repeated whisper, the fair has indeed become obscenely foul. Grotesque faces with slanting eyes and flattened snouts full of sharpened tusks further deform the heavily built, muscled body with its long arms and thick, swarthy hide.  Cannibalistic cruelty motivates their distorted souls, and Orcs respect little save superior force. Most are superb smiths, but they rarely make items unassociated with war. Lesser Orcs are born to live, fight, and die in darkness; they hate the stars and moon, but panic under the brighter sun. Greater Orcs are smarter and tougher; they can operate in daylight and possess superior skills in speaking, reasoning, and fighting; some superior individuals have been known to be spell-casters. Loremasters frequently confuse Orcs with Goblins due to their similar gruesome physiognomies and proclivities, but if legends are to be heeded, their origins are very different. Fabulous tale depict Orc and Elf locked in fratricidal hatred, determined to vanquish their sinister brethren or perish in the attempt. The fury displayed their counterparts who roam outside the realm of story lends credence to the existence of a blood tie."
-    },
-    {
-        "fullname":"Orcs",
-        "name":"Orcs",
-        "subtype":"Greater",
-        "intelligence":"AV",
-        "outlook":"Cruel",
-        "notes":"(-)-X@#,ARU-6; 5-6 ft. tall; dislike, but can operate normally in sunlight; no suggested professional limitations; same as lesser Orcs in other respects.",
-        "level":"4D",
-        "hits":"70F",
-        "at_db":"17(40s)",
-        "size_crit":"M/--",
-        "base_rate":"60",
-        "max_pace":"Spt",
-        "mn_bonus":"+10",
-        "ms_aq":"MD/MD",
-        "attacks":[
-        	"+80 Melee",
-        	"+60 Missile"
-        ],
-        "encountered":"varies",
-        "treasure":"varies",
-        "description":"Rumor asserts that Orcs possess as ancestors Elves, whose minds and bodies were twisted by evil. If any truth remains mingled with this oft-repeated whisper, the fair has indeed become obscenely foul. Grotesque faces with slanting eyes and flattened snouts full of sharpened tusks further deform the heavily built, muscled body with its long arms and thick, swarthy hide.  Cannibalistic cruelty motivates their distorted souls, and Orcs respect little save superior force. Most are superb smiths, but they rarely make items unassociated with war. Lesser Orcs are born to live, fight, and die in darkness; they hate the stars and moon, but panic under the brighter sun. Greater Orcs are smarter and tougher; they can operate in daylight and possess superior skills in speaking, reasoning, and fighting; some superior individuals have been known to be spell-casters. Loremasters frequently confuse Orcs with Goblins due to their similar gruesome physiognomies and proclivities, but if legends are to be heeded, their origins are very different. Fabulous tale depict Orc and Elf locked in fratricidal hatred, determined to vanquish their sinister brethren or perish in the attempt. The fury displayed their counterparts who roam outside the realm of story lends credence to the existence of a blood tie."
-    },
-    {
         "fullname":"Young Oriental Drake",
         "name":"Oriental Dragon",
         "subtype":"Young",

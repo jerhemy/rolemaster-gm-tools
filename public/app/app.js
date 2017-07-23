@@ -139,9 +139,7 @@
                         ctx.fillText(model.attacks[x], 325, yAxis);
                         yAxis += yInc;
                     }
-                    
-                    
-                    
+
                     ctx.font="12px Georgia";
                     ctx.fillText(model.name, 50, 15);
                     ctx.fillText(model.subtype, 320, 15);
