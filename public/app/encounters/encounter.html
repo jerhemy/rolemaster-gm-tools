@@ -5,7 +5,7 @@
                 <li class="dropdown">
                     <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">Terrain<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <md-menu-item><md-button ng-click="rollTable('Alpine & Mountains')">Alpine & Mountian<span class="md-alt-text"></span></md-button></md-menu-item>
+                        <md-menu-item><md-button ng-click="rollTable('Alpine & Mountains')">Alpine & Mountain<span class="md-alt-text"></span></md-button></md-menu-item>
                         <md-menu-item><md-button ng-click="rollTable('Rough & Rugged Hills')">Rough & Rugged Hills<span class="md-alt-text"></span></md-button></md-menu-item>
                         <md-menu-item><md-button ng-click="rollTable('Underground')">Underground<span class="md-alt-text"></span></md-button></md-menu-item>
                         <md-menu-item><md-button ng-click="rollTable('Waste & Barren')">Waste & Barren<span class="md-alt-text"></span></md-button></md-menu-item>
@@ -92,6 +92,31 @@
                         <md-menu-item><md-button ng-click="rollTable('Universal Animals')">Universal Animals<span class="md-alt-text"></span></md-button></md-menu-item>
                     </ul> <!-- /Sub menu -->
                 </li>
+
+                <li class="dropdown" style="padding: 5px 0 0 0; width: 300px;">
+                    <md-autocomplete
+                            ng-disabled="isDisabled"
+                            md-no-cache="noCache"
+                            md-selected-item="selectedItem"
+                            md-search-text-change="searchTextChange(searchText)"
+                            md-search-text="searchText"
+                            md-selected-item-change="selectedItemChange(item)"
+                            md-items="item in querySearch(searchText)"
+                            md-item-text="item.name"
+                            md-min-length="0"
+                            placeholder="Type a creature name"
+                            md-menu-class="autocomplete-custom-template">
+                        <md-item-template>
+                            <span class="item-title">
+                                <span> {{item.fullname}} </span>
+                            </span>
+                            <span class="item-metadata">
+                                <span> {{item.name}} </span>
+                            </span>
+                        </md-item-template>
+                    </md-autocomplete>
+                </li>
+
             </ul>
 
             <!--<form role="search" class="navbar-form navbar-left">
@@ -101,6 +126,7 @@
                 <button class="btn btn-default" type="submit">Submit</button>
             </form>
         </div><!--/.nav -->
+
     </div>
 </nav>
 
